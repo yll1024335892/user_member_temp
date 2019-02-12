@@ -1,1 +1,5 @@
-.xx { -moz-border-radius: 0.5px; -webkit-border-radius: 0.5px; border-radius: 0.5px; }
+.xx {
+  -moz-border-radius: 0.5px;
+  -webkit-border-radius: 0.5px;
+  border-radius: 0.5px;
+}

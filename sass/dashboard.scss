@@ -8,21 +8,45 @@ $screen-lg-min:'1200px';
 .sidebar {
   display: none;
 }
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+
+
 //小于768px
 @media (max-width: $screen-xs-max) {
 
 }
 //大于768px，小于992px
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-
+  .sidebar{
+    width: 190px;
+  }
 }
 //大于992px，小于1200px
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-
+  .sidebar{
+    width: 250px;
+  }
 }
 //大于1200px
 @media (min-width: $screen-lg-min) {
-
+  .sidebar{
+    width: 250px;
+  }
 }
 
 @media (min-width: $screen-xs-max) {
@@ -32,11 +56,10 @@ $screen-lg-min:'1200px';
     bottom: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
+    padding: 0px 20px 20px;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto;
     background-color: #f5f5f5;
-    border-right: 1px solid #eee;
   }
 }
 
