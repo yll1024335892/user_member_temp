@@ -10,7 +10,7 @@ javascripts_dir = "javascripts"
 
 # 输出边缘成css的格式:
 # output_style = :expanded or :nested or :compact or :compressed
-output_style=:expanded
+output_style=:compact
 # 是否取消compass的注释:
 # relative_assets = true
 relative_assets=true
